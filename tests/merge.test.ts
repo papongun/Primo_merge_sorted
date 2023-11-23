@@ -16,6 +16,7 @@ describe('test merge', () => {
 
     test('unequal length array', () => {
       expect(merge([1,6],[2,4,5,20])).toEqual([1,2,4,5,6,20]);
+      expect(merge([2,4,5,20],[1,6])).toEqual([1,2,4,5,6,20]);
     });
 
 });
